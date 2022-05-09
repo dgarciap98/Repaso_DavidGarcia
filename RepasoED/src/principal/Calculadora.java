@@ -23,7 +23,8 @@ public class Calculadora {
 					+ "\n 2) Restar"
 					+ "\n 3) Multiplicar"
 					+ "\n 4) Dividir"
-					+ "\n 5) Salir");
+					+ "\n 5) Calcular IVA"
+					+ "\n 6) Salir");
 					
 			opcion = entrada.nextLine().toUpperCase().charAt(0);
 			
@@ -49,6 +50,10 @@ public class Calculadora {
 					System.out.println("Resultado: " + (num1/num2));
 					break;
 				case '5':
+					System.out.println(num1+1.21);
+					parar = true;
+					break;
+				case '6':
 					System.out.println("Fin de programa");
 					parar = true;
 					break;
@@ -58,10 +63,7 @@ public class Calculadora {
 			}
 			
 		}while(!parar);	
-				
-
-		
-
+	
 	}
 
 }
